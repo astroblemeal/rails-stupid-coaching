@@ -5,13 +5,10 @@
   <input type="submit" value="Ask!">
 </form> -->
 
-<form id="form" action="answer">
-    <h3>Ask a question</h3>
-    <input type="text" name="ask" class="form-inline"></input>
-    <input type="submit" id="submit" class="btn btn-primary">
-    <div id="ask"></div>
+<form class="form-inline" action="answer">
+  <div class="form-group">
+    <input type="text" name="ask" class="form-control">
+  </div>
+  <button type="submit" value="Ask!" class="btn btn-primary">Submit</button>
 </form>
-
-<%= link_to "Answers", "/answer" %>
-
 

@@ -1,8 +1,21 @@
 
-<h1>Coach's answer:</h1>
-<%= @answer %>
+<h1>Stupid Coach</h1>
+<div class="flash flash-warning alert alert-dismissible fade show" role="alert">
+  <span><strong>Your question</strong> 🤔: <%= @ask %><a href="#"></a></span>
+  <a data-dismiss="alert" aria-label="Close">
+    <i class="fas fa-times"></i>
+  </a>
+</div>
+
+<div class="flash flash-success alert alert-dismissible fade show" role="alert">
+  <span><strong>Coach:</strong> 🎉 <%= @answer %></span>
+  <a data-dismiss="alert" aria-label="Close">
+    <i class="fas fa-times"></i>
+  </a>
+</div>
 
 <br>
-<%= link_to "Ask a new question", "/ask" %>
 
+
+<%= link_to "Ask a new question", "/ask" %>
 
